@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pnpspf-react-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pnpspfReact/PnpspfReactWebPart.js",
+          "manifest": "./src/webparts/pnpspfReact/PnpspfReactWebPart.manifest.json"
+        }
+      ]
+    },
+    "spsviedemo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spsviedemo/SpsviedemoWebPart.js",
+          "manifest": "./src/webparts/spsviedemo/SpsviedemoWebPart.manifest.json"
+        }
+      ]
+    },
+    "spsvie-solution-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spsvieSolution/SpsvieSolutionWebPart.js",
+          "manifest": "./src/webparts/spsvieSolution/SpsvieSolutionWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PnpspfReactWebPartStrings": "lib/webparts/pnpspfReact/loc/{locale}.js",
+    "SpsviedemoWebPartStrings": "lib/webparts/spsviedemo/loc/{locale}.js",
+    "SpsvieSolutionWebPartStrings": "lib/webparts/spsvieSolution/loc/{locale}.js"
+  }
+}
